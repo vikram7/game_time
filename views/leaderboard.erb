@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Game Time</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+  <div class = "leaderboard"> Welcome to the NFL's Leaderboard </div><br>
+    <% @wins_hash.each do |team, wins| %>
+      <a href="<%= team %>"><%= team %></a>: <%= wins %> - <%= @loss_hash[team] %>
+      <br>
+      <% end %>
+  </body>
+
+</html>

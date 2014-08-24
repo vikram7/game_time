@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Team Page</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+  <div class = "leaderboard"> Welcome to the <%= @chosen_team%>'s Team Page.</div><br>
+  Here is their total record: <%= @wins_hash[@chosen_team]%> - <%= @loss_hash[@chosen_team]%><br>
+  Here is a snapshot of their prior games (Home Team - Away Team: Score)<br><br>
+  <% @chosen_teams_games.each do |game| %>
+  <%=  game[:home_team]%> - <%= game[:away_team] %>:
+  <%=  game[:home_score]%> - <%=game[:away_score] %>
+  <br>
+  <% end %>
+  <br><br>
+  Click <a href = "/leaderboard">here<a> to go back to the leaderboard</a>
+  </body>
+
+</html>

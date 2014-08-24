@@ -1,0 +1,44 @@
+body {
+    /* Use a "Matrix"-style color scheme. */
+    background-color: #563d7c;
+    color: white;
+
+    font-family: sans-serif;
+    font-size: 1.5em;
+
+    text-align: center;
+
+
+    display: block;
+    vertical-align: middle;
+
+
+}
+
+ul {
+    /* Wrap the list in a green box. */
+    /*width: 300px;*/
+    /*border: 1px solid #00ff00;*/
+}
+
+li {
+    /* Add a bit more spacing between list items. */
+    padding: 5px;
+}
+
+a:visited {
+    color: white;
+}
+
+a:link {
+    color: white;
+}
+
+.smaller {
+    font-size: 10pt;
+}
+
+
+.leaderboard {
+    font-size: 32pt;
+}
